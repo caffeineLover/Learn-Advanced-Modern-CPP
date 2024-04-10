@@ -42,7 +42,7 @@ public:
 
 	void protocol(const string& protocol)
 	{
-		// Do some checks
+		// Pretend we're doing some checks
 		protocol_ = protocol;
 	}
 
@@ -50,7 +50,7 @@ public:
 
 	void resource(const string& resource)
 	{
-		// Do some checks
+		// Pretend we're doing some checks
 		resource_ = resource;
 	}
 
