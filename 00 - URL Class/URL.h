@@ -2,6 +2,8 @@
 
 #include <string>
 using std::string;
+using std::cerr;
+using std::endl;
 
 
 /*
@@ -20,15 +22,24 @@ private:
 	string protocol_;
 	string resource_;
 
+
 public:
 
 	URL(const string& protocol, const string& resource)
 		: protocol_{ protocol }, resource_{ resource }
 	{};
 
+
+	URL(const string& url)
+	{
+		parse_url( url );
+	}
+
+
 	URL(const URL& other)
 		: protocol_{ other.protocol_ }, resource_{ other.resource_ }
 	{};
+
 
 	URL& operator=(const URL& other)
 	{
@@ -39,13 +50,11 @@ public:
 	}
 
 
-
 	void protocol(const string& protocol)
 	{
 		// Pretend we're doing some checks
 		protocol_ = protocol;
 	}
-
 
 
 	void resource(const string& resource)
@@ -55,12 +64,10 @@ public:
 	}
 
 
-
 	string& protocol()
 	{
 		return protocol_;
 	}
-
 
 
 	string& resource()
@@ -69,11 +76,27 @@ public:
 	}
 
 
-
 	string url()
 	{
 		return protocol() + "://" + resource();
 	}
 
+
+	// For "http://www.yahoo.com", separatorPos will be 4 (the 'h' will be 0).
+	//
+	// string::npos is the largest integer representable by size_t.  When string::find()
+	// can't find a match, it returns string::npos.
+	//
+	void parse_url(const string& url)
+	{
+		size_t separatorPos = url.find("://");
+
+		if (separatorPos != string::npos) {
+			protocol_ = url.substr(0, separatorPos);
+			resource_ = url.substr(separatorPos + 3);  // skip "://"
+		} else {
+			cerr << "Malformed url: " << url << endl;
+		}
+	}
 
 };

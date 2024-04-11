@@ -10,5 +10,12 @@ int main()
 
 	cout << myURL.url() << endl;
 
+	URL yourURL("http://yahoo.com");
+	cout << yourURL.resource() << endl;
+
+	URL ourURL("twas brillig and the slithy toves");
+
+	cout << "npos: " << string::npos << endl;
+
 	return 0;
 }
