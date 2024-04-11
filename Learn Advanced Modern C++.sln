@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "00 - URL Class", "00 - URL Class\00 - URL Class.vcxproj", "{C7BA4F12-7328-441A-90C5-A8871076C04E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01 - Conway Game of Life", "01 - Conway Game of Life\01 - Conway Game of Life.vcxproj", "{27CC5FA5-1448-4E19-87FE-66678482DAC4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{C7BA4F12-7328-441A-90C5-A8871076C04E}.Release|x64.Build.0 = Release|x64
 		{C7BA4F12-7328-441A-90C5-A8871076C04E}.Release|x86.ActiveCfg = Release|Win32
 		{C7BA4F12-7328-441A-90C5-A8871076C04E}.Release|x86.Build.0 = Release|Win32
+		{27CC5FA5-1448-4E19-87FE-66678482DAC4}.Debug|x64.ActiveCfg = Debug|x64
+		{27CC5FA5-1448-4E19-87FE-66678482DAC4}.Debug|x64.Build.0 = Debug|x64
+		{27CC5FA5-1448-4E19-87FE-66678482DAC4}.Debug|x86.ActiveCfg = Debug|Win32
+		{27CC5FA5-1448-4E19-87FE-66678482DAC4}.Debug|x86.Build.0 = Debug|Win32
+		{27CC5FA5-1448-4E19-87FE-66678482DAC4}.Release|x64.ActiveCfg = Release|x64
+		{27CC5FA5-1448-4E19-87FE-66678482DAC4}.Release|x64.Build.0 = Release|x64
+		{27CC5FA5-1448-4E19-87FE-66678482DAC4}.Release|x86.ActiveCfg = Release|Win32
+		{27CC5FA5-1448-4E19-87FE-66678482DAC4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
