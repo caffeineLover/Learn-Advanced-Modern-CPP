@@ -33,7 +33,7 @@ void grid::randomize()
 	const int cutoff = RAND_MAX/factor;
 	time_t now;
 	time(&now);
-	// srand(now);
+	srand(now);
 
 	for (int row = 1; row < rowmax; ++row)
 		for (int col = 1; col < colmax; ++col)

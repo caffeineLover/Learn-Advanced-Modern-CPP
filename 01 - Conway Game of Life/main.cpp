@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	while (true)
 	{
 		genCurrent.draw();
-		cin.get();
+		// cin.get();
 
 		grid genNext;
 		calculate( genCurrent, genNext );
